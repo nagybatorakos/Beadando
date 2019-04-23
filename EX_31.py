@@ -5,7 +5,7 @@ def felhasznalo(n):
         k=n.find("@")
         fh=n[:k]
         a=string.ascii_letters + string.digits
-        if len(fh)>1:
+        if len(fh)>0:
             if (fh[0] in a) and (fh[-1] in a):
                 a+="-"+"_"+"."
                 for i in range(len(fh)):
@@ -19,7 +19,7 @@ def kiszolgalo(n):
         sz=n[:-3].rfind(".")
         ksz=n[k+1:sz]
         a=string.ascii_letters + string.digits
-        if len(ksz)>1:
+        if len(ksz)>0:
             if (ksz[0] in a) and (ksz[-1] in a):
                 a+="-"+"."
                 for i in range(len(ksz)):
